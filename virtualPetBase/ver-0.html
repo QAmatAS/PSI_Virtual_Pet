@@ -252,16 +252,6 @@ button:disabled {
       </div>
     </div>
 
-    <div id="gashapon-section">
-      <button id="pull-g1-btn" disabled>Hunger</button>
-      <button id="pull-g2-btn" disabled>Tired</button>
-      <button id="pull-g3-btn" disabled>Play</button>
-      <button id="pull-g4-btn" disabled>Injure</button>
-    </div>
-
-    <div id="result" class="hidden"></div>
-  </div>
-
   <script src="script.js"></script>
 
   <script>
@@ -283,7 +273,6 @@ const coinLabels = {
   E: document.getElementById("coin-e-label"),
 };
 const xpLabel = document.getElementById("xp-label");
-const levelLabel = document.getElementById("level-label");
 const insertButtons = {
   A: document.getElementById("insert-coin-a-btn"),
   B: document.getElementById("insert-coin-b-btn"),
@@ -293,7 +282,6 @@ const insertButtons = {
 const petIcon = document.getElementById("pet-icon");
 
 // Remove gashapon section
-document.getElementById("gashapon-section").remove();
 
 const petMachine = createMachine({
   id: "virtualPet",
